@@ -1,13 +1,75 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  padding: 5.5rem 1rem;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  height: 90%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  direction: rtl;
+  font-family: iranyekan;
+  flex: 1 0 100%;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1-of-5 {
+  text-align: center;
+  flex: 0 0 18%;
+  border: 2px solid black;
+  align-self: stretch;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  margin-top: 4px;
+
+  /* border: 2px red solid; */
+}
+
+form input {
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+.pos {
+  color: green;
+}
+
+.neg {
+  color: red;
 }
