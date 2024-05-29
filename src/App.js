@@ -29,7 +29,6 @@ export const data = [
 ];
 
 export default function App() {
-  // const [input, setinput] = useState("");
   return (
     <div className="app">
       <Header />

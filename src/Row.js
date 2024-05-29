@@ -8,15 +8,15 @@ export default function Row({ c1, c2, c3, c4, c5, vahed }) {
 
   return (
     <div className="row">
-      <Cell>{c1}</Cell>
-      <Cell>{c2}</Cell>
-      <Cell>
+      <Cell classs={"col-1-of-5"}>{c1}</Cell>
+      <Cell classs={"col-2-of-5"}>{c2}</Cell>
+      <Cell classs={"col-2-of-5"}>
         <FormInput oninput={setinput} />
       </Cell>
-      <Cell classs={input > 0 ? "pos" : "neg"}>
+      <Cell classs={"col-2-of-5"}>
         <FormOutput input={input} vahed={vahed} />
       </Cell>
-      <Cell>{c5}</Cell>
+      <Cell classs={"col-2-of-5"}>{c5}</Cell>
     </div>
   );
 }

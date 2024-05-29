@@ -36,6 +36,13 @@ body {
 
 .col-1-of-5 {
   text-align: center;
+  flex: 0 0 8%;
+  border: 2px solid black;
+  align-self: stretch;
+}
+
+.col-2-of-5 {
+  text-align: center;
   flex: 0 0 18%;
   border: 2px solid black;
   align-self: stretch;
